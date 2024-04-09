@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <input type="checkbox" id="click" />
+    <label for="click">
+      <!-- <i class="menu-btn bx bx-menu"></i> -->
+      <i class="close-btn bx bx-x-circle"></i>
+    </label>
+    <div class="sidenav">
+      <div class="logo">
+        <h2>WSL</h2>
+      </div>
+      <div class="search_bar">
+        <!-- <form action="#">
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search" />
+          </form> -->
+      </div>
+      <div class="menu_text">
+        <p>Menu</p>
+      </div>
+      <div class="icon_items">
+        <ul>
+          <li class="active">
+            <i class="bx bx-home"></i>
+            <a href="#"> Home </a>
+          </li>
+          <li>
+            <i class="bx bxs-report"></i>
+            <a href="#"> Report </a>
+          </li>
+          <li>
+            <i class="bx bx-group"></i>
+            <a href="#"> Driver </a>
+          </li>
+          <li>
+            <i class="bx bxs-user-detail" style="color: #000"></i>
+            <a href="#"> Customer </a>
+          </li>
+          <li>
+            <i class="bx bx-bar-chart"></i>
+            <a href="#"> Revenue </a>
+          </li>
+          <li>
+            <i class="bx bx-log-out"></i>
+            <a href="#"> Log Out </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content">
+    <div class="tab-content-item" id="home">
+      <h1>Home</h1>
+      <p>Cục cứt</p>
+    </div>
+    <div class="tab-content-item">
+      <!-- <h1>Report</h1>
+      <p>Cục cứt</p> -->
+    
+      <div class="menu-bar">
+        <nav>
+          <ul id="main-menu">
+            <li>Tên tài xế</li>
+            <li>Thành phố</li>
+            <li>Tình trạng</li>
+          </ul>
+        </nav>
+      </div>
+    
+      <table>
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Tên</th>
+            <th>SĐT</th>
+            <th>Bằng lái</th>
+            <th>Lương</th>
+            <th>Loại</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- Dòng dữ liệu mẫu -->
+          <tr>
+            <td>1</td>
+            <td>Nguyễn Văn A</td>
+            <td>0123456789</td>
+            <td>B2</td>
+            <td>10,000,000</td>
+            <td>Xe hơi</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Trần Đăng Khoa</td>
+            <td>0987654321</td>
+            <td>A1</td>
+            <td>8,000,000</td>
+            <td>Xe máy</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Nguyễn Thị Bình</td>
+            <td>0123456789</td>
+            <td>B2</td>
+            <td>9,000,000</td>
+            <td>Xe hơi</td>
+          </tr>
+        </tbody>
+        
+      </table>
+    </div>
+    <div class="tab-content-item">
+      <h1>Driver</h1>
+      <p>Cục cứt</p>
+    </div>
+    <div class="tab-content-item">
+      <h1>Customer</h1>
+      <p>Cục cứt</p>
+    </div>
+    <div class="tab-content-item">
+      <h1>Revenue</h1>
+      <p>Cục cứt</p>
+    </div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Ẩn tất cả các thẻ tab-content-item khi trang tải
+      $('.tab-content-item').hide();
+       // Hiển thị thẻ có id 'home'
+      $('#home').show();
+      $('.icon_items ul li').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        var index = $(this).index();
+        $('.tab-content-item').eq(index).show().siblings().hide();
+      });
+    });
+</script>
+</html>
