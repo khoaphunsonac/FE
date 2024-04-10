@@ -149,7 +149,7 @@ label .close-btn {
 }
 
 .tab-content-item:nth-child(3) {
-  background-color: lightyellow;
+  background-color: white;
 }
 
 .tab-content-item:nth-child(4) {
@@ -252,4 +252,45 @@ table tbody tr:hover {
   margin: 0;
   font-size: 14px;
   color: #666;
+}
+
+/*Driver Categories*/
+.driver-menu-bar {
+  background-color: #626e9f;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.search-box {
+  padding: 5px;
+  margin: 5px;
+}
+
+.status {
+  background-color: #1d5266;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #3498db;
+  padding: 10px;
+  text-align: center;
+}
+
+.card:first-child {
+  border-right: none;
+}
+
+.card:last-child {
+  border-left: none;
 }

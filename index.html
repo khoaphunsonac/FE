@@ -1,167 +1,181 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="index.css" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="container">
-    <input type="checkbox" id="click" />
-    <label for="click">
-      <!-- <i class="menu-btn bx bx-menu"></i> -->
-      <i class="close-btn bx bx-x-circle"></i>
-    </label>
-    <div class="sidenav">
-      <div class="logo">
-        <h2>WSL</h2>
-      </div>
-      <div class="search_bar">
-        <!-- <form action="#">
+  <body>
+    <div class="container">
+      <input type="checkbox" id="click" />
+      <label for="click">
+        <!-- <i class="menu-btn bx bx-menu"></i> -->
+        <i class="close-btn bx bx-x-circle"></i>
+      </label>
+      <div class="sidenav">
+        <div class="logo">
+          <h2>WSL</h2>
+        </div>
+        <div class="search_bar">
+          <!-- <form action="#">
             <i class="bx bx-search"></i>
             <input type="text" placeholder="Search" />
           </form> -->
-      </div>
-      <div class="menu_text">
-        <p>Menu</p>
-      </div>
-      <div class="icon_items">
-        <ul>
-          <li class="active">
-            <i class="bx bx-home"></i>
-            <a href="#"> Home </a>
-          </li>
-          <li>
-            <i class="bx bxs-report"></i>
-            <a href="#"> Report </a>
-          </li>
-          <li>
-            <i class="bx bx-group"></i>
-            <a href="#"> Driver </a>
-          </li>
-          <li>
-            <i class="bx bxs-user-detail" style="color: #000"></i>
-            <a href="#"> Customer </a>
-          </li>
-          <li>
-            <i class="bx bx-bar-chart"></i>
-            <a href="#"> Revenue </a>
-          </li>
-          <li>
-            <i class="bx bx-log-out"></i>
-            <a href="#"> Log Out </a>
-          </li>
-        </ul>
+        </div>
+        <div class="menu_text">
+          <p>Menu</p>
+        </div>
+        <div class="icon_items">
+          <ul>
+            <li class="active">
+              <i class="bx bx-home"></i>
+              <a href="#"> Home </a>
+            </li>
+            <li>
+              <i class="bx bxs-report"></i>
+              <a href="#"> Report </a>
+            </li>
+            <li>
+              <i class="bx bx-group"></i>
+              <a href="#"> Driver </a>
+            </li>
+            <li>
+              <i class="bx bxs-user-detail" style="color: #000"></i>
+              <a href="#"> Customer </a>
+            </li>
+            <li>
+              <i class="bx bx-bar-chart"></i>
+              <a href="#"> Revenue </a>
+            </li>
+            <li>
+              <i class="bx bx-log-out"></i>
+              <a href="#"> Log Out </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="tab-content">
-    <div class="tab-content-item" id="home">
-      <h1>Home</h1>
-      <p>Cục cứt</p>
-    </div>
-    <div class="tab-content-item">
-      <!-- <h1>Report</h1>
+    <div class="tab-content">
+      <div class="tab-content-item" id="home">
+        <h1>Home</h1>
+      </div>
+      <div class="tab-content-item">
+        <!-- <h1>Report</h1>
       <p>Cục cứt</p> -->
-    
-      <div class="menu-bar">
-        <nav>
-          <ul id="main-menu">
-            <li>Tên tài xế</li>
-            <li>Thành phố</li>
-            <li>Tình trạng</li>
-          </ul>
-        </nav>
-      </div>      
-      <div>
-        <nav>
-          <ul id="sub-menu" class="submenu">
-            <li class="submenu-item">
-              <h1>Số lượng hóa đơn</h1>
-              <p>200</p>
-            </li>
-            <li class="submenu-item">
-              <h1>Doanh thu hóa đơn</h1>
-              <p>154,000,000</p>
-            </li>
-            <li class="submenu-item">
-              <h1>Hóa đơn chưa thanh toán</h1>
-              <p>16,000,000</p>
-            </li>
-          </ul>
-        </nav>
+
+        <div class="menu-bar">
+          <nav>
+            <ul id="main-menu">
+              <li>Date</li>
+              <li>Services</li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <nav>
+            <ul id="sub-menu" class="submenu">
+              <li class="submenu-item">
+                <h1>Số lượng hóa đơn</h1>
+                <p>200</p>
+              </li>
+              <li class="submenu-item">
+                <h1>Doanh thu hóa đơn</h1>
+                <p>154,000,000</p>
+              </li>
+              <li class="submenu-item">
+                <h1>Hóa đơn chưa thanh toán</h1>
+                <p>16,000,000</p>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Tên</th>
+              <th>SĐT</th>
+              <th>Bằng lái</th>
+              <th>Lương</th>
+              <th>Loại</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- Dòng dữ liệu mẫu -->
+            <tr>
+              <td>1</td>
+              <td>Nguyễn Văn A</td>
+              <td>0123456789</td>
+              <td>B2</td>
+              <td>10,000,000</td>
+              <td>Xe hơi</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ngô Hoàng Hải</td>
+              <td>0987654321</td>
+              <td>F</td>
+              <td>1 jack</td>
+              <td>Xe tăng</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Nguyễn Thị Bình</td>
+              <td>0123456789</td>
+              <td>B2</td>
+              <td>9,000,000</td>
+              <td>Xe hơi</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>STT</th>
-            <th>Tên</th>
-            <th>SĐT</th>
-            <th>Bằng lái</th>
-            <th>Lương</th>
-            <th>Loại</th>
-          </tr>
-        </thead>
+      <div class="tab-content-item">
+        <!-- <h1>Driver</h1> -->
+        <div class="driver-menu-bar">
+          <input
+            type="text"
+            class="search-box"
+            placeholder="Search Driver's Name"
+          />
 
-        <tbody>
-          <!-- Dòng dữ liệu mẫu -->
-          <tr>
-            <td>1</td>
-            <td>Nguyễn Văn A</td>
-            <td>0123456789</td>
-            <td>B2</td>
-            <td>10,000,000</td>
-            <td>Xe hơi</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Ngô Hoàng Hải</td>
-            <td>0987654321</td>
-            <td>F</td>
-            <td>1 jack</td>
-            <td>Xe tăng</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Nguyễn Thị Bình</td>
-            <td>0123456789</td>
-            <td>B2</td>
-            <td>9,000,000</td>
-            <td>Xe hơi</td>
-          </tr>
-        </tbody>
+          <input type="text" class="search-box" placeholder="Search Cities" />
+          <div class="status">Driver Status</div>
+        </div>
 
-      </table>
+        <table class="card-table">
+          <tr>
+            <td class="card">Number of Drivers</td>
+            <td class="card">Drivers Working/Online</td>
+            <td class="card">Vehicles Being Fixed/Upgraded</td>
+          </tr>
+        </table>
+      </div>
+      <div class="tab-content-item">
+        <h1>Customer</h1>
+      </div>
+      <div class="tab-content-item">
+        <h1>Revenue</h1>
+      </div>
     </div>
-    <div class="tab-content-item">
-      <h1>Driver</h1>
-      <p>Cục cứt</p>
-    </div>
-    <div class="tab-content-item">
-      <h1>Customer</h1>
-      <p>Cục cứt</p>
-    </div>
-    <div class="tab-content-item">
-      <h1>Revenue</h1>
-      <p>Cục cứt</p>
-    </div>
-  </div>
-</body>
-<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script>
     $(document).ready(function () {
       // Ẩn tất cả các thẻ tab-content-item khi trang tải
-      $('.tab-content-item').hide();
-       // Hiển thị thẻ có id 'home'
-      $('#home').show();
-      $('.icon_items ul li').click(function () {
-        $(this).addClass('active').siblings().removeClass('active');
+      $(".tab-content-item").hide();
+      // Hiển thị thẻ có id 'home'
+      $("#home").show();
+      $(".icon_items ul li").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
         var index = $(this).index();
-        $('.tab-content-item').eq(index).show().siblings().hide();
+        $(".tab-content-item").eq(index).show().siblings().hide();
       });
     });
-</script>
+  </script>
 </html>
