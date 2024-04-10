@@ -1,281 +1,285 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
 }
 
 .container .sidenav {
-    width: 260px;
-    height: 100vh;
-    overflow: hidden;
-    position: fixed;
-    padding: 32px 16px;
-    background-color: #4CAF50;
+  width: 260px;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  padding: 32px 16px;
+  background-color: #5ebec4;
 }
 
 .container .logo h2 {
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    opacity: 1;
-    pointer-events: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 1;
+  pointer-events: none;
 }
 
 .sidenav .search_bar {
-    margin-top: 32px;
-    position: relative;
+  margin-top: 32px;
+  position: relative;
 }
 
 .sidenav .search_bar i {
-    position: absolute;
-    color: #fff;
-    font-size: 20px;
-    left: 38px;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  left: 38px;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .sidenav .search_bar input {
-    width: 100%;
-    padding: 10px;
-    padding-left: 36px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    margin-left: 15px;
+  width: 100%;
+  padding: 10px;
+  padding-left: 36px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-left: 15px;
 }
 
 .sidenav .menu_text {
-    margin-top: 30px;
-    position: center;
+  margin-top: 30px;
+  position: center;
 }
 
 .sidenav .menu_text p {
-    font-size: 14px;
-    font-weight: 500;
-    color: #fff;
-    text-transform: uppercase;
-    padding-left: 10px;
-    position: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 10px;
+  position: center;
 }
 
 .sidenav .icon_items ul {
-    list-style: none;
-    margin-top: 32px;
-    padding: 0 10px;
+  list-style: none;
+  margin-top: 32px;
+  padding: 0 10px;
 }
 
 .sidenav .icon_items ul li {
-    cursor: pointer;
-    margin: 4px;
-    padding: 10px 0;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    transition: 0.5s ease;
+  cursor: pointer;
+  margin: 4px;
+  padding: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease;
 }
 
 .icon_items .active,
 .sidenav .icon_items ul li:hover {
-    background: #8BC34A;
+  background: #4b979c;
 }
 
 .sidenav .icon_items ul li i {
-    font-size: 24px;
-    padding: 0 12px;
+  font-size: 24px;
+  padding: 0 12px;
 }
 
 .sidenav .icon_items ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
-    padding-left: 16px;
-    opacity: 1;
-    pointer-events: none;
-    transition: 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 16px;
+  opacity: 1;
+  pointer-events: none;
+  transition: 0.3s ease;
 }
 
 #click {
-    display: none;
+  display: none;
 }
 
 .container label {
-    position: absolute;
-    left: 3%;
-    top: 1.5%;
-    font-size: 20px;
-    z-index: 1;
-    cursor: pointer;
+  position: absolute;
+  left: 3%;
+  top: 1.5%;
+  font-size: 20px;
+  z-index: 1;
+  cursor: pointer;
 }
 
-#click:checked~.sidenav {
-    width: 260px;
+#click:checked ~ .sidenav {
+  width: 260px;
 }
 
 .tab-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .tab-content .menu-bar ul li {
-    transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .tab-content .menu-bar ul li:hover {
-    background-color: #8BC34A;
-    color: white;
+  background-color: #fdf5df;
+  color: black;
 }
 
 .tab-content .menu-bar ul li.active {
-    background-color: #8BC34A;
-    color: white;
+  background-color: #b48e24;
+  color: white;
 }
 
 .menu-bar {
-    background-color: #f8f8f8;
-    padding: 10px;
+  background-color: #f8f8f8;
+  padding: 10px;
 }
 
 .menu-bar ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 .menu-bar ul li {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-table, th, td {
-    border: 2px solid #000000;
-    padding: 8px;
-    text-align: center;
+table,
+th,
+td {
+  border: 2px solid #000000;
+  padding: 8px;
+  text-align: center;
 }
 
 table th {
-    background-color: #4CAF50;
-    color: white;
+  background-color: #5ebec4;
+  color: white;
 }
 
 table tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 table tbody tr:hover {
-    background-color: #ddd;
-    cursor: pointer;
+  background-color: #ddd;
+  cursor: pointer;
 }
 
 #main-menu {
   list-style-type: none;
-  padding: 0;
+  padding: 10px 40px;
 }
 
 #main-menu li {
   display: inline-block;
   margin-right: 20px;
+  
 }
 
 #main-menu li a {
   color: #fff; /* Text color */
-  background-color: #4CAF50; /* Background color */
-  padding: 10px 20px;
+  background-color: #5ebec4; /* Background color */
+  padding: 10px 40px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
 #main-menu li a:hover {
-  background-color: #8BC34A; /* Darker green on hover */
+  background-color: #fdf5df; 
 }
 
 .submenu {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .submenu-item {
-    background-color: #4CAF50; /* Changed background color */
-    padding: 10px;
-    border-radius: 5px;
-    flex: 1;
-    margin-top: 10px;
-    margin-right: 10px;
+  background-color: #5ebec4; /* Changed background color */
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .submenu-item:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .submenu-item h1 {
-    margin: 0;
-    font-size: 16px;
-    color: #f3f2f2;
+  margin: 0;
+  font-size: 16px;
+  color: #f3f2f2;
 }
 
 .submenu-item p {
-    margin: 0;
-    font-size: 14px;
-    color: #f0f0f0c3;
+  margin: 0;
+  font-size: 14px;
+  color: #f0f0f0c3;
 }
 
 .driver-menu-bar {
-    background-color: #4CAF50;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+  background-color: #5ebec4;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .search-box {
-    padding: 5px;
-    margin: 5px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .status {
-    background-color: #1d5266;
-    color: rgb(251, 248, 248);
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #1d5266;
+  color: rgb(251, 248, 248);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .card-table {
-    margin-top: 20px;
-    border-collapse: collapse;
-    width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 .card {
-    border: 1px solid #3498db;
-    padding: 10px;
-    text-align: center;
+  border: 1px solid #3498db;
+  padding: 10px;
+  text-align: center;
 }
 
 .card:first-child {
-    border-right: none;
+  border-right: none;
 }
 
 .card:last-child {
-    border-left: none;
+  border-left: none;
 }
 
-.card-table th, .card-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
+.card-table th,
+.card-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
 }
