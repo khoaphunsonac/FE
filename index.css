@@ -310,3 +310,63 @@ table tbody tr:hover {
   float: left;
 }
 
+#Customer h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#myButton {
+  display: inline-block;
+  color: #fff;
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+#myButton:hover {
+  background-color: #8BC34A;
+}
+
+.create-driver {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.create-driver h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#create-driver img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+#delete-driver {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  
+}
+
+
+
+#delete-button {
+  background-color: #f44336; /* Red */
+}
+
+#cancel-button {
+  background-color: #4CAF50; /* Green */
+}
+
+.button:hover {
+  opacity: 0.8;
+}
